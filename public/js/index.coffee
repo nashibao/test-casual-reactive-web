@@ -15,8 +15,7 @@ class MessageVM
 
     @content = oo('')
 
-    # @list = oo(Message.find({}))
-    @list = oo(false)
+    @list = oo(Message.find({}))
 
   create: ()->
     Message.create {content: @content()}

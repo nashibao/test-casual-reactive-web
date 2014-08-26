@@ -6930,7 +6930,7 @@ window.Message = Message = new mongoose({
 MessageVM = (function() {
   function MessageVM() {
     this.content = oo('');
-    this.list = oo(false);
+    this.list = oo(Message.find({}));
   }
 
   MessageVM.prototype.create = function() {
