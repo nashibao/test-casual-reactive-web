@@ -1,0 +1,19 @@
+{
+  "name": "apps",
+  "repo": "nashibao/apps",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "lodash/lodash": "2.2.0"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.coffee",
+  "scripts": [
+    "index.coffee",
+    "rpc/index.coffee",
+    "rpc/cursor.coffee",
+    "rpc/mongoose.coffee"
+  ]
+}

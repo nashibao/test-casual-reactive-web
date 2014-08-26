@@ -1,0 +1,10 @@
+extends ./template
+block content
+  +with('message')
+    +with('list')
+      +each('vals')
+        p {{content}}
+        a(data-bind="click: $parents[1].remove.bind($parents[1], content)", href="#") 削除
+    hr
+    input(data-bind="value: content")
+    button(data-bind="click: create") 作成

@@ -1,0 +1,24 @@
+{
+  "name": "plaid",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -e coffee,jade -x coffee app.coffee"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.0.1",
+    "cookie-session": "^1.0.2",
+    "debug": "~0.7.4",
+    "express": "~4.2.0",
+    "express-session": "^1.6.1",
+    "jade": "~1.3.0",
+    "mongoose": "^3.8.12",
+    "socket.io": "*"
+  },
+  "devDependencies": {
+    "component": "^0.19.9",
+    "component-coffee": "^0.1.4"
+  }
+}

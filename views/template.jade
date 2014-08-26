@@ -1,0 +1,30 @@
+doctype html
+html
+  include ./_mixin
+  head
+    //- knockout
+    script(src="/libs/knockout/knockout-3.2.0beta.debug.js")
+    script(src="/libs/knockout/knockout.punches.min.js")
+    script(src="/libs/knockout/knockout.mapping-latest.js")
+    script.
+      ko.punches.enableAll();
+    //- socket
+    script(src="/socket.io/socket.io.js")
+    //- component
+    script(type="text/javascript", src="/js/build.js")
+
+    style.
+      body {
+        padding: 50px;
+        font-family: "Helvetica Neue";
+      }
+
+  body
+
+    h1 rpc test
+
+    block content
+
+
+    script.
+      require('apps/index');
